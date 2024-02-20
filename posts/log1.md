@@ -1,5 +1,5 @@
 ---
 title: "Logbook for week 1" 
-subtitle: "First week in internship and what i have done"
+subtitle: "First week in internship"
 date: "2024-02-16"
 ---
