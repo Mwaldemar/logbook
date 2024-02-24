@@ -1,8 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import type { Metadata } from "next";
-import { header }  from "./components/header/header"
-import { footer } from './components/footer/footer'
-import Link from "next/link";
+import Header  from "./components/header/header"
+import Footer from './components/footer/footer'
 
 import styles from './page.module.scss'
 
@@ -16,33 +15,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-  const header = (
-    <header>
-            <div className={styles.header}>
-              <Link className={styles.title} href="/">
-                <h1>Mikkel's Logbook</h1>
-              </Link>
-                <p>Welcome to my logbook</p>
-            </div>
-        </header>
-  )
-
-  const footer = (
-    <footer>
-            <div className={styles.footer}>
-                <p>Made by Mikkel W.</p>
-            </div>
-        </footer>
-  )
   
   return (
     <html lang="en">
       <body>
         <div className={styles.container}>
-        {header}
-        {children}
-        {footer}
+          <Header />
+          {children}
+          <Footer />
         </div>
       </body>
     </html>

@@ -1,0 +1,48 @@
+.navigation {
+    border-top: 1px solid white;
+    margin-bottom: 25px;
+}
+
+.linkContainer {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+.navItem {
+  flex: 1;
+  text-align: center;
+}
+
+.link {
+  background-color: black;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s ease;
+  border-bottom: 1px solid black;
+
+  &.right {
+    border-bottom-right-radius: 12px;
+    border-right: 1px solid black;
+  }
+
+  &.left {
+    border-bottom-left-radius: 12px;
+    border-left: 1px solid black;
+  }
+
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+.active {
+  background-color: white;
+  color: black;
+}
