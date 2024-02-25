@@ -21,8 +21,13 @@ const pathname = usePathname()
                         </Link>
                     </li>
                     <li className={styles.navItem}>
-                        <Link href="/about" className={clsx(styles.link, { [styles.active]: pathname === '/about' }, styles.right)}>
+                        <Link href="/about" className={clsx(styles.link, { [styles.active]: pathname === '/about' })}>
                             About
+                        </Link>
+                    </li>
+                    <li className={styles.navItem}>
+                        <Link href="/placeholder" className={clsx(styles.link, { [styles.active]: pathname === '/placeholder' }, styles.right)}>
+                            Placeholder
                         </Link>
                     </li>
                 </ul>
