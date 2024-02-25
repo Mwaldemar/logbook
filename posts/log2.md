@@ -7,7 +7,7 @@ date: "19/2 - 23/2"
 
 In my second week at Trendhim, I finished creating my logbook-website on Monday.
 
-After finishing my logbook, i started doing tasks for the website again. In this task i were to move the return policy to the cart summary as seen in the picture below, which meant i had to create a new React-component, which is a framework that utilizes JavaScript and HTML, to make "building-block" for websites. For the design of the tasks, the engineering team collaborates a lot with another team called "Shopper Experience", which gives us tasks that we are to implement. So the new component had to be of the same style that the other components in the cart summary are.
+After finishing my logbook, i started doing tasks for the website again. In the task i were to move the return policy to the cart summary as seen in the picture below, which meant i had to create a new React-component, which is a framework that utilizes JavaScript and HTML, to make "building-blocks" for websites. For the design of the tasks, the engineering team collaborates a lot with another team called "Shopper Experience", which gives us tasks that we are to implement. So the new component had to be of the same style that the other components in the cart summary are.
 
 ![alt text for screen readers](/secondweek.png "Second task")
 
@@ -17,4 +17,4 @@ My next task was to remove some text from the payment option in the footer secti
 
 ![alt text for screen readers](/secondweek2.png "Third task")
 
-After this task i was cleaning up some styling documents and removing parts that are not used for the website anymore. My mentor prepared me different styling documents, that became increasingly comprehensive and harder to clean up, but i managed to finish some of it before the week ended.
+After this task i started doing my next task, which was to clean up some styling documents and remove parts that are not used for the website anymore. My mentor prepared me different styling documents, that became increasingly comprehensive and harder to clean up, but i managed to finish some of it before the week ended.
