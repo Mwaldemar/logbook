@@ -12,10 +12,8 @@ const Accordion: FC<AccordionProps> = ({ items }) => {
     const handleToggle = (index: number) => {
         setActiveIndices((prevIndices) => {
             if (prevIndices.includes(index)) {
-                // If the index is already in the activeIndices array, remove it
                 return prevIndices.filter((i) => i !== index);
             } else {
-                // If the index is not in the activeIndices array, add it
                 return [...prevIndices, index];
             }
         });
@@ -90,7 +88,7 @@ const Accordion: FC<AccordionProps> = ({ items }) => {
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
                                     className={styles.closeIcon}
-                                    style={{ zIndex: 1000 }} // Ensure it's above the overlay
+                                    style={{ zIndex: 1000 }}
                                 >
                                     <path d="M18 6L6 18M6 6l12 12"></path>
                                 </svg>
