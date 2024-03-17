@@ -11,7 +11,9 @@ Right off the bat, I got my hands on some real tasks for the Trendhim website. I
 
 The picture below shows my first change that went live on the actual website, where the text inside the red-marked boxes were not completely centered.
 
-![alt text for screen readers](/firstweek.png "First task")
+<div>
+  <img src="/firstweek.png" alt="alt text for screen readers" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+</div>
 
 After the introduction and my first task, i went to my second task, which was to adjust the wishlist button. The wishlist button is the heart which can also be seen in the picture above. It had some hover-effect that had to be changed. It turned out to be quite a mouthful and i spent a long time working on it and almost had a solution, but i couldnt make the last part work. I eventually asked my mentor for help, and we then did it in collaboration, where he showed me the way he would attack the problem, which gave a good insight into what can be done to solve this task and similar tasks.
 
