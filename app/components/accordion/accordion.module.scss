@@ -1,21 +1,10 @@
 .accordionWrapper {
-  margin: 50px auto;
+  margin: auto;
   width: 75%;
   position: relative;
 
   &:first-of-type {
     border-top: 1px solid #ccc;
-  }
-
-  button {
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-
-    > div > .rotated {
-      transform: rotate(90deg);
-      transition: transform 0.3s ease;
-    }
   }
 
   @media (min-width: 768px) {
@@ -31,7 +20,7 @@
     }
   }
 
-  input {
+  .checkbox {
     display: none;
 
     & ~ .content {
@@ -39,7 +28,7 @@
       overflow: hidden;
       right: -100%;
     }
-
+    
     &:checked ~ .content {
       max-height: 1250px;
       border-bottom: 1px solid #ccc;
@@ -51,21 +40,16 @@
         top: 0;
         right: 0;
         height: 100%;
-        width: 30%;
+        width: 40%;
         overflow-y: auto;
-        padding-left: 20px;
         z-index: 20;
         box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
         transition: right 0.2s ease;
         z-index: 1001;
-
-        .accordionContent {
-          margin-left: 10px;
-        }
       }
 
-      .closeButton {
-        margin-top: 28px;
+      .close {
+        padding: 15px 10px;
         z-index: 20;
         &:hover {
           color: #848484;
@@ -73,10 +57,17 @@
       }
 
       @media (max-width: 767px) {
-        .closeButton {
+        .close {
           display: none;
         }
       }
+    }
+
+    @media (max-width: 767px) {
+      &:checked ~ .trigger {
+        border-bottom: 1px solid transparent;
+      }
+      
     }
   }
 
@@ -84,19 +75,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0px;
     background-color: #fff;
     border-bottom: 1px solid #ccc;
     cursor: pointer;
 
     &:hover {
       text-decoration: underline;
-    }
-
-    @media (max-width: 767px) {
-        &.active {
-            border-bottom: none;
-        }
     }
   }
 }
