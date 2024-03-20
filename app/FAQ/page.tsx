@@ -30,10 +30,10 @@ const items = [
 
 const FAQ = () => {
   const trigger = useMemo(() => {
-    return items.map(item => (
+    return items.map((item, index) => (
       <div key={item.id} className={styles.ruleTrigger}>
         <p>{item.title}</p>
-        <span className={styles.arrowSvg}>{ArrowSvg}</span>
+        <span className={clsx(styles.arrowSvg, index === 2 ? styles.right : styles.up )}>{ArrowSvg}</span>
       </div>
     ))
   }, [])
