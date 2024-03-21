@@ -1,6 +1,6 @@
 .accordionWrapper {
   margin: auto;
-  width: 75%;
+  width: 100%;
   position: relative;
 
   &:first-of-type {
@@ -8,14 +8,14 @@
   }
 
   @media (min-width: 768px) {
-    &:has(> div > input:checked) .backdrop {
+    .checkbox:checked~.backdrop {
       position: fixed;
       top: 0;
       left: 0;
       min-width: 100%;
       min-height: 100%;
       background-color: rgba(0, 0, 0, 0.5);
-      z-index: 1000;
+      z-index: 10;
       transition: 0.2s ease;
     }
   }
@@ -23,16 +23,16 @@
   .checkbox {
     display: none;
 
-    & ~ .content {
+    &~.content {
       max-height: 0;
       overflow: hidden;
       right: -100%;
     }
-    
-    &:checked ~ .content {
+
+    &:checked~.content {
       max-height: 1250px;
       border-bottom: 1px solid #ccc;
-      padding: 0px 10px 20px 0px;
+      padding: 0px 0px 20px 0px;
 
       @media (min-width: 768px) {
         background-color: #fff;
@@ -40,19 +40,37 @@
         top: 0;
         right: 0;
         height: 100%;
-        width: 40%;
         overflow-y: auto;
         z-index: 20;
         box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
         transition: right 0.2s ease;
         z-index: 1001;
+
+        .borderBottom {
+          border-bottom: 1px solid #ccc;
+        }
+
+        @media (min-width: 1024px) {
+          transition: all 0.2s ease;
+          width: 40%;
+        }
+
+        @media (max-width: 1023px) {
+          transition: all 0.2s ease;
+          width: 75%;
+        }
       }
 
       .close {
+        display: flex;
+        width: fit-content;
         padding: 15px 10px;
-        z-index: 20;
+        cursor: pointer;
+
         &:hover {
           color: #848484;
+          transition: transform 0.2s ease;
+          transform: scale(1.15);
         }
       }
 
@@ -64,14 +82,18 @@
     }
 
     @media (max-width: 767px) {
-      &:checked ~ .trigger {
+      &:checked~.trigger {
         border-bottom: 1px solid transparent;
       }
-      
+
+      &:checked ~.trigger  svg {
+        transition: transform 0.2s ease;
+        transform: rotate(90deg);
+      }
     }
   }
 
-  label {
+  .trigger {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -82,5 +104,13 @@
     &:hover {
       text-decoration: underline;
     }
+
+    @media (max-width: 767px) {
+      & svg {
+        transition: transform 0.2s ease;
+        transform: rotate(-90deg);
+      }
+    }
   }
 }
+
