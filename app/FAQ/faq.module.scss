@@ -1,16 +1,8 @@
 .ruleTrigger {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  .arrowSvg {
-    &.up {
-      @media (max-width: 767px) {
-        transform: rotate(-90deg);
-      }
-    }
-  }
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .title {
@@ -20,9 +12,14 @@
 }
 
 .accordionContents {
-  @media (min-width: 768px) {
-    padding: 5px 15px;
-  }
+    @media (min-width: 768px) {
+        padding: 0px 20px;
+
+        .title {
+            text-align: start;
+            margin-bottom: 5px;
+        }
+    }
 
   @media (max-width: 767px) {
     .title {
