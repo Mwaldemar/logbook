@@ -8,7 +8,7 @@ import Navigation from '../navbar/navbar'
 const Header = () => (
     <header>
         <div className={styles.header}>
-            <Image width="75" height="75" src='/bird.png' alt='logo'/>
+            <Image width="96" height="102" src='/bird.png' alt='logo'/>
             <Link className={styles.title} href="/">
                 <h1>Mikkel's Logbook</h1>
             </Link>
