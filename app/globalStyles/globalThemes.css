@@ -1,0 +1,138 @@
+:root {
+/*--------------------------------------------------------------- Primary Theme ------------------------------------------------------------------*/
+  --primary-color50: #e3edf2;
+  --primary-color100: #b9d3de;
+  --primary-color200: #8ab6c9;
+  --primary-color300: #5b98b3;
+  --primary-color400: #3782a2;
+  --primary-color500: #146c92; /* Main shade */
+  --primary-color600: #12648a;
+  --primary-color700: #0e597f;
+  --primary-color800: #0b4f75;
+  --primary-color900: #063d63;
+  --primary-colorA100: #94cdff;
+  --primary-colorA200: #61b6ff;
+  --primary-colorA400: #2e9eff;
+  --primary-colorA700: #1592ff;
+
+/*--------------------------------------------------------------- Grey Theme ------------------------------------------------------------------*/
+  --grey-color50: #efefef;
+  --grey-color100: #d6d6d6;
+  --grey-color200: #bbbbbb;
+  --grey-color300: #a0a0a0;
+  --grey-color400: #8b8b8b;
+  --grey-color500: #777777; /* Main shade */
+  --grey-color600: #6f6f6f;
+  --grey-color700: #646464;
+  --grey-color800: #5a5a5a;
+  --grey-color900: #474747;
+  --grey-colorA100: #f6b2b2;
+  --grey-colorA200: #f18585; 
+  --grey-colorA400: #ff4444; 
+  --grey-colorA700: #ff2a2a;
+
+/*--------------------------------------------------------------- Error Theme ------------------------------------------------------------------*/
+  --error-color50: #fefcfc;
+  --error-color100: #fdf8f8;
+  --error-color200: #fcf3f4;
+  --error-color300: #faeef0;
+  --error-color400: #f9eaec;
+  --error-color500: #f8e6e9; /* Main shade */
+  --error-color600: #f7e3e6;
+  --error-color700: #f6dfe3;
+  --error-color800: #f5dbdf;
+  --error-color900: #f3d5d9;
+        
+        /* Error Border */
+        --errorBorder-color500: #BB0A21;
+
+/*--------------------------------------------------------------- Warning Theme - Maybe info? ------------------------------------------------------------------*/
+  --warning-color50: #fffef9;
+  --warning-color100: #fffef0;
+  --warning-color200: #fffde6;
+  --warning-color300: #fffcdc;
+  --warning-color400: #fffbd5;
+  --warning-color500: #fffacd; /* Main shade */
+  --warning-color600: #fff9c8;
+  --warning-color700: #fff9c1;
+  --warning-color800: #fff8ba;
+  --warning-color900: #fff6ae; 
+
+        /* Warning Border */
+        --warningBorder: #e5db64;
+
+/*--------------------------------------------------------------- Success Theme ------------------------------------------------------------------*/
+  --success-50: #e9f1ed;
+  --success-color100: #c9ddd3;
+  --success-color200: #a5c7b5;
+  --success-color300: #81b097;
+  --success-color400: #669f81;
+  --success-color500: #4b8e6b; /* Main shade */
+  --success-color600: #448663;
+  --success-color700: #3b7b58;
+  --success-color800: #33714e;
+  --success-color900: #235f3c;
+  --success-colorA100: #a2ffc6;
+  --success-colorA200: #6fffa7;
+  --success-colorA400: #3cff87;
+  --success-colorA700: #23ff78;
+
+/*--------------------------------------------------------------- Black Theme ------------------------------------------------------------------*/
+  --black-50: #e0e0e0;
+  --black-color100: #b3b3b3;
+  --black-color200: #808080;
+  --black-color300: #4d4d4d;
+  --black-color400: #262626;
+  --black-color500: #000000; /* Main shade */
+  --black-color600: #000000;
+  --black-color700: #000000;
+  --black-color800: #000000;
+  --black-color900: #000000;
+  --black-colorA100: #a6a6a6;
+  --black-colorA200: #8c8c8c;
+  --black-colorA400: #737373;
+  --black-colorA700: #666666;
+  
+/*--------------------------------------------------------------- White Theme ------------------------------------------------------------------*/
+  --white-color500: #ffffff; /* Main shade */
+  
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                                Old Colours / Maybe reuse?                                                               */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+  /* Colour theme used right now */
+  --black: #000000;
+  --blue: #4d6c8d;
+  --green: #4b8e6b;
+  --discountBg: #df280a;
+  --errorMessage: #df280a;
+  --notificationBg: #fffacd;
+  --notificationBorder: #e5db64;
+  --productGreyOverlay: rgba(0,0,0,0.04);
+  --redDark: #9C1D22;
+  --white: #fff;
+  --primary: #146C92;
+  --primaryHover: #105978;
+  --whiteDarkened5: #f2f2f2;
+  --greyDark: #333;
+  --greyDarkLightened10: #474747;
+  --greyLight: #9e9e9e;
+  --greyLighter: #d2d2d2;
+  --greyLighterer: #e9e9e9;
+  --greyLightest: #f5f5f5;
+  --greyLightestest: #fafafa;
+
+    /* Grey colors used already */
+    --greyDark: #333333;
+    --greySlate: #474747;   /* greyDarkLightened10 */
+    --greyCool: #9e9e9e;    /* greyLight */
+    --greySilver: #d2d2d2;  /* greyLighter */
+    --greyPale: #e9e9e9;    /* greyLighterer */
+    --greyLight: #f5f5f5;   /* greyLightest */
+    --greyWhitish: #fafafa; /* greyLightestest */
+}

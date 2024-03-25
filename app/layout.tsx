@@ -4,6 +4,7 @@ import Header  from "./components/header/header"
 import Footer from './components/footer/footer'
 
 import styles from './page.module.scss'
+import './globalStyles/globalThemes.css'
 
 export const metadata: Metadata = {
   title: "Mikkel's Logbook",
