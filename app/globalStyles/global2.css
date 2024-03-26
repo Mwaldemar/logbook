@@ -44,7 +44,7 @@
   --error-color900: #f3d5d9;
         
         /* Error Border */
-        --errorBorder-color500: #BB0A21;
+        --errorBorder: #BB0A21;
 
 /*--------------------------------------------------------------- Warning Theme - Maybe info? ------------------------------------------------------------------*/
   --warning-color50: #fffef9;
@@ -62,7 +62,7 @@
         --warningBorder: #e5db64;
 
 /*--------------------------------------------------------------- Success Theme ------------------------------------------------------------------*/
-  --success-50: #e9f1ed;
+  --success-color50: #e9f1ed;
   --success-color100: #c9ddd3;
   --success-color200: #a5c7b5;
   --success-color300: #81b097;
@@ -78,7 +78,7 @@
   --success-colorA700: #23ff78;
 
 /*--------------------------------------------------------------- Black Theme ------------------------------------------------------------------*/
-  --black-50: #e0e0e0;
+  --black-color50: #e0e0e0;
   --black-color100: #b3b3b3;
   --black-color200: #808080;
   --black-color300: #4d4d4d;
@@ -96,6 +96,17 @@
 /*--------------------------------------------------------------- White Theme ------------------------------------------------------------------*/
   --white-color500: #ffffff; /* Main shade */
   
+
+/*--------------------------------------------------------------- Main Colors/Shades ------------------------------------------------------------------*/
+  --primary-color500: #146c92;  /* Main shade primary */
+  --grey-color500: #777777;     /* Main shade grey */
+  --error-color500: #f8e6e9;    /* Main shade error */
+  --errorBorder: #BB0A21;       /* Main shade error border */
+  --warning-color500: #fffacd;  /* Main shade warning */
+  --warningBorder: #e5db64;     /* Main shade warning border */
+  --success-color500: #4b8e6b;  /* Main shade success */
+  --black-color500: #000000;    /* Main shade black */
+  --white-color500: #ffffff;    /* Main shade white */
 
 
 
